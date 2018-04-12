@@ -1,0 +1,50 @@
+.about{
+	background: url('../img/bg/about-bg.png') center center no-repeat;
+	background-size: cover;
+}
+
+.about .container{
+	padding-top: 40px;
+}
+.about__title{
+	position: absolute;
+	top: -100px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.about__article{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 297px;
+	padding-left: 10px;
+	margin-right: 20px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.about__article-icon{
+	display: inline-block;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.about__article-head{
+	font-family: 'lifehack';
+	font-weight: 500;
+	font-size: 24px;
+	color: #2f3234;
+	line-height: 28px;
+	margin-bottom: 17px;
+}
+
+.about__article-text{
+	text-align: justify;
+	font-family: 'ubuntu';
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(47, 50, 52, .8);
+}

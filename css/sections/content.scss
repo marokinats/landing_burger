@@ -1,0 +1,89 @@
+//Боковое фиксированное меню
+.side-menu{
+	position: fixed;
+	top: 90px;
+	right: 40px;
+}
+
+.side-menu__item{
+	margin-bottom: 5px;
+}
+
+.side-menu__link{
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: relative;
+
+	&::before, &::after{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+	}
+
+	&::before{
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		border: 1px solid $colorwhite;
+		opacity: 0;
+		transition: .5s;
+	}
+
+	&::after{
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background-color: $colorwhite;
+	}
+	
+	&:hover::before{
+		opacity: 1;
+	}
+}
+
+.side-menu__item.active .side-menu__link::before {
+	opacity: 1;
+}
+
+//
+
+.title{
+	font-family: "Gagalin";
+	font-weight: 400;
+	font-size: 72px;
+	line-height: 65px;
+	margin-bottom: 30px;
+}
+
+.title-yellow{
+	color: #f9b43b;
+}
+
+.title-black{
+	color: #2f3234;
+}
+
+.title-white{
+	color: $colorwhite;
+}
+
+.btn{
+	padding: 10px 14px;
+	border: 1px solid black;
+	border-radius: 4px;
+	text-decoration: none;
+	color: $colorwhite;
+}
+
+input[type="text"],
+input[type="tel"]{
+	background-color: $colorwhite;
+	height: 35px;
+	border: 2px solid $colorwhite;
+	border-radius: 4px;
+}

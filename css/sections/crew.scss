@@ -1,0 +1,105 @@
+.crew{
+	background: url('../img/bg/crew-bg.png') center center no-repeat;
+	background-size: cover;
+}
+
+.crew__info{
+	float: right;
+	width: 50%;
+	background-color: rgba(52, 55, 57, 0.93);
+	height: 100%;
+	padding-top: 85px;
+	padding-left: 80px;
+}
+
+.crew__title{
+	margin-bottom: 70px;
+}
+
+.crew__list{
+	padding-left: 20px;
+}
+
+.crew__item{
+	margin-bottom: 25px;
+}
+
+.crew__item.active .crew__link{
+	color: #f9b43b;
+}
+
+.crew__item.active .crew__link::before{
+	transform: rotate(180deg);
+	top: 40%;
+    left: -20px;
+}
+
+.crew__link{
+	text-decoration: none;
+	font-family: 'gagalin';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 28px;
+	color: $colorwhite;
+	position: relative;
+
+	&:before{
+		position: absolute;
+		content: "";
+		width: 0;
+		height: 0;
+		border-top: 7px solid #f9b43b;
+		border-right: 7px solid transparent;
+		border-left: 7px solid transparent;
+		border-bottom: 0px solid transparent;
+		top: 50%;
+		bottom: 50%;
+		transform: translate(-50%, -50%);
+		left: -15px;
+		transition: .3s;
+	}
+}
+
+.crew__content{
+	padding-top: 15px;
+	display: none;
+
+	@extend %clearfix;
+}
+
+.crew__content-pic{
+	float: left;
+	text-align: center;
+	width: 30%;
+	overflow: hidden;
+}
+
+.crew__content-img{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: url('../img/content/crew-content.png') center center no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+.crew__content-info {
+	float: left;
+	width: 70%;
+}
+
+.crew__content-head{
+	font-family: 'ubuntu';
+	font-weight: 600;
+	color: $colorwhite;
+	margin-bottom: 15px;
+}
+
+.crew__content-text{
+	font-family: 'ubuntu';
+	font-weight: 300;
+	color: $colorwhite;
+}
+
+
+

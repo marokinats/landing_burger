@@ -1,0 +1,123 @@
+.hello{
+	background: url('../img/bg/hello-bg.png') center center no-repeat;
+	background-size: cover;
+}
+
+.header{
+	min-height: 85px;
+	//margin-top: -210px;
+
+	@extend %clearfix;
+}
+
+.header .container{
+	top: 0;
+	transform: none;
+}
+
+.header__left{
+	float: left;
+	width: 10%;
+	margin-top: 10px;
+}
+
+.header__right{
+	float: right;
+	width: 80%;
+	margin-top: 25px;
+}
+
+.header__list{
+	text-align: right;
+}
+
+.header__item{
+	display: inline-block;
+	margin-right: 35px;
+	vertical-align: middle;
+	position: relative;
+
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.header__link{
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'ubuntu';
+	font-weight: 500;
+	font-size: 13px;
+	color: $colorwhite;
+	text-transform: uppercase;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.header__list-style{
+	display: inline-block;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -18px;
+}
+
+.header__link_btn{
+	border-color: $colorred;
+	background-color: $colorred;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.hello__content .container{
+	top: 0;
+	transform: none;
+}
+
+.hello__image{
+	float: left;
+	width: 480px;
+	padding-left: 50px;
+	position: relative;
+}
+
+.hello__pic-decor{
+	position: absolute;
+	left: 20px;
+	top: 55px;
+}
+
+.hello__info{
+	float: right;
+	width: 460px;
+	padding-top: 135px;
+}
+
+.hello__article p{
+	font-family: 'lifehack';
+	font-weight: 400;
+	font-size: 63px;
+	line-height: 56px;
+	color:$colorwhite;
+}
+
+.hello__down svg{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: .3s;
+}
+
+.hello__down:hover svg {
+	width: 40px;
+	height: 40px;
+}

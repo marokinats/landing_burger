@@ -1,0 +1,79 @@
+.footer{
+	background: url(../img/bg/footer-bg.png);
+	background-size: cover;
+	padding-top: 8px;
+}
+
+.footer__container{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+
+	@extend %clearfix;
+}
+
+.footer__left{
+	float: left;
+	width: 50%;
+}
+
+.footer__adress{
+	font-family: 'ubuntu';
+	font-weight: 300;
+	font-size: 14px;
+	color: $colorwhite;
+	margin-bottom: 5px;
+
+}
+
+.footer__tel{
+	text-decoration: none;
+	font-family: 'ubuntu';
+	font-weight: 400;
+	font-size: 16px;
+	color: #e35028;
+}
+
+.footer__tel-icon{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 5px;
+}
+
+.footer__tel-number{
+	display: inline-block;
+}
+
+.footer__right{
+	float: right;
+	width: 50%;
+}
+
+.socials{
+	margin-top: 10px;
+	text-align: right;
+}
+
+.socials__item{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 13px;
+}
+
+.socials__link{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	opacity: .3;
+	transition: .5s;
+	&:hover{
+		opacity: 1;
+	}
+}
+
+.socials__icon{
+	display: block;
+	width: 20px !important;
+	height: 20px !important;
+}

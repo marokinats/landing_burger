@@ -1,0 +1,85 @@
+.menu{
+	background: url('../img/bg/menu-bg.png');
+	background-size: cover;
+	position: relative;
+}
+
+.menu__title{
+	padding-top: 110px;
+	padding-left: 220px;
+
+}
+
+.menu__list{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	@extend %clearfix;
+}
+
+.menu__item{
+	float: left;
+	height: 100%;
+}
+
+.menu__item.active .menu__link-text{
+	color: #f9b43b;
+}
+
+.menu__link{
+	position: relative;
+	display: block;
+	text-decoration: none;
+	width: 70px;
+	height: 100%;
+	float: left;
+}
+
+.menu__link_meat{
+	background: url('../img/content/menu-meat.png') center center no-repeat;
+	background-size: cover;
+}
+
+.menu__link_vegan{
+	background: url('../img/content/menu-vegan.png') center center no-repeat;
+	background-size: cover;
+}
+
+.menu__link_diet{
+	background: url('../img/content/menu-diet.png') center center no-repeat;
+	background-size: cover;
+}
+
+.menu__link-text{
+	position: absolute;
+	top: 50%;
+	left: -445px;
+	transform: rotate(-90deg);
+	font-family: 'gagalin';
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 64px;
+	color: $colorwhite;
+	white-space: nowrap;
+	text-align: center;
+	width: 960px;
+	height: 70px;
+}
+
+.menu__content{
+	height: 100%;
+	float: left;
+	background: rgba(47, 50, 52, 0.93);
+	width: 0;
+	overflow: hidden;
+}
+
+.menu__content-text{
+	font-family: 'ubuntu';
+	font-weight: 300;
+	color: $colorwhite;
+	padding: 60px 30px;
+	width: 550px;
+}

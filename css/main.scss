@@ -1,0 +1,25 @@
+// mixins
+@import "layout/mixins.scss";
+
+// layout setups
+//@import "layout/normalize";
+@import "layout/adjustment";
+@import "layout/fonts";
+
+// sections
+@import "sections/content.scss";
+@import "sections/hello.scss";
+@import "sections/about.scss";
+@import "sections/products.scss";
+@import "sections/crew.scss";
+@import "sections/menu.scss";
+@import "sections/reviews.scss";
+@import "sections/order.scss";
+@import "sections/map.scss";
+@import "sections/footer.scss";
+
+
+// //responsive design
+// @import "media/laptop.scss";
+// @import "media/tablets.scss";
+// @import "media/phones.scss";

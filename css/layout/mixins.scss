@@ -1,0 +1,10 @@
+$colorwhite: #ffffff;
+$colorred: #e45028;
+
+%clearfix{
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
